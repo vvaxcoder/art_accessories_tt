@@ -1,6 +1,13 @@
+<script setup lang="ts">
+import { mainModuleStore } from "@/store/main";
+
+const main = mainModuleStore();
+
+main.fetchPosts();
+</script>
+
 <template>
-  <div>
-    <NuxtRouteAnnouncer />
-    <NuxtWelcome />
-  </div>
+<div class="flex justify-center w-full h-full">
+  <NuxtPage />
+</div>
 </template>
